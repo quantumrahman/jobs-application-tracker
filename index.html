@@ -46,12 +46,12 @@
                     <p class="font-geist textbase text-[#64748B] font-medium"><span>0</span> jobs</p>
                 </div>
                 <div class="w-full gap-2 mb-4">
-                    <button class="w-full max-w-20 py-2 px-3 bg-[#ffffff] border border-[#F1F2F4] font-geist text-xs text-[#64748B] font-medium rounded-sm cursor-pointer">All</button>
-                    <button class="w-full max-w-20 py-2 px-3 bg-[#ffffff] border border-[#F1F2F4] font-geist text-xs text-[#64748B] font-medium rounded-sm cursor-pointer">Interview</button>
-                    <button class="w-full max-w-20 py-2 px-3 bg-[#ffffff] border border-[#F1F2F4] font-geist text-xs text-[#64748B] font-medium rounded-sm cursor-pointer">Rejected</button>
+                    <button id="all-tab" class="w-full max-w-20 py-2 px-3 bg-[#3B82F6] border border-[#3B82F6] font-geist text-xs text-white font-medium rounded-sm cursor-pointer">All</button>
+                    <button id="interview-tab" class="w-full max-w-20 py-2 px-3 bg-[#ffffff] border border-[#F1F2F4] font-geist text-xs text-[#64748B] font-medium rounded-sm cursor-pointer">Interview</button>
+                    <button id="rejected-tab" class="w-full max-w-20 py-2 px-3 bg-[#ffffff] border border-[#F1F2F4] font-geist text-xs text-[#64748B] font-medium rounded-sm cursor-pointer">Rejected</button>
                 </div>
                 <div class="w-full">
-                    <div class="block">
+                    <div class="jobs-tab">
                         <div class="w-full min-h-auto grid grid-cols-1 gap-4">
                             <!-- dynamic data from javascript -->
                             <div class="w-full p-6 bg-[#ffffff] border border-[#F1F2F4] rounded-lg space-y-5">
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hidden">
+                    <div class="interviews-tab hidden">
                         <div class="w-full min-h-[400px] flex items-center justify-center flex-col gap-5 bg-white border border-[#F1F2F4] rounded-lg">
                             <div class="w-[100px] h-[100px]">
                                 <img src="./assets/jobs.png" alt="paper icon">
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hidden">
+                    <div class="rejects-tab hidden">
                         <div class="w-full min-h-[400px] flex items-center justify-center flex-col gap-5 bg-white border border-[#F1F2F4] rounded-lg">
                             <div class="w-[100px] h-[100px]">
                                 <img src="./assets/jobs.png" alt="paper icon">
